@@ -9,6 +9,10 @@
 body{
     background-color: rgb(26, 26, 26);
 }
+@font-face {
+    font-family:"LLPixelFun";
+    src: url("asserts/fonts/LLPixelFun-Regular.ttf") format("truetype");
+}
 /* animations */
 @keyframes appear{
     0%{opacity: 0;}
@@ -21,21 +25,79 @@ body{
     text-align: left;
     height: 60px;
     display: flex;
+    align-items: center;
     /*background-image: linear-gradient(to right, #ffd75e, #20f389, #39e3ff, #ff78b0, #f1df8e);*/
-} svg-img{
-    height: 60px;
-    fill: aqua;
+}
+.top div{
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      background-color: #ffffff;
+      -webkit-mask: url('asserts/gmlogo.svg') no-repeat 50% 50%;
+      mask: url('asserts/gmlogo.svg') no-repeat 50% 50%;
   }
 .top h1{
+    font-family: "LL PixelFun", serif;
     font-size: 32px;
-    /*font-style: italic;*/
-    font-weight: bold;
+    letter-spacing: 2px;
+    /*font-style: italic;
+    font-weight: bold;*/
     color: white;
     text-shadow: 0 0 1px #aaaaaa;
+    padding: 10px;
 }
 
-
+/* info */
+.info h1,p{
+    color: white;
+}
 /* outlinks */
-.outlink {
-
+.links {
+    display: flex;
+    padding: 10px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    margin: 10px;
+    border-radius:5px;
+    background-color: white;
+}
+.link:hover{
+     transform: scale(1.025);
+     transform-origin: center;
+ }
+.link div{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    user-select: none;
+}
+.link h1{
+    font-size: 12px;
+    padding: 5px;
+    user-select: none;
+}
+#bilibili{
+    background-color: palevioletred;
+}
+#bilibili div{
+    background-color: #ffffff;
+    -webkit-mask: url('asserts/bilibili.svg') no-repeat 70% 70%;
+    mask: url('asserts/bilibili.svg') no-repeat 70% 70%;
+}
+#bilibili h1{
+    color:#ffffff;
+}
+#github{
+    background-color: aliceblue;
+}
+#school{
+    background-color: deepskyblue;
+}
+#wechat{
+    background-color: lightgreen;
 }

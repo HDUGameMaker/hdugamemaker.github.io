@@ -1,1 +1,14 @@
-<svg id="f6fd594e-f91c-451e-beb9-0ed81be6eab2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 158"><defs><style>.a4fa82cb-7606-41cf-8883-d415723de139,.e7515d1c-b53a-4f2f-884a-090b3a048a7d{fill-rule:evenodd;}.e7515d1c-b53a-4f2f-884a-090b3a048a7d{fill:#69f;}</style></defs><title>2</title><path class="a4fa82cb-7606-41cf-8883-d415723de139" d="M522,401h10V391h10V381h10V371h9V361h41v-9H592V341H582V331H571V321H561V311h-9V301H542v-9H532V282H522V401ZM512,262h10v10h10v10h10v10h10v9h9v10h10v10h11v10h10v10h10v11h10v9h10v10H561v10h-9v10H542v10H532v9H522v10H512V262Z" transform="translate(-512 -262)"/><path class="e7515d1c-b53a-4f2f-884a-090b3a048a7d" d="M622,371v10H561v10h-9v10H542v9H532v10H522V410h10v-9h10V391h10V381h9V371Z" transform="translate(-512 -262)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="f6fd594e-f91c-451e-beb9-0ed81be6eab2"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 110 158"
+	 style="enable-background:new 0 0 110 158;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#6699FF;}
+</style>
+<title>2</title>
+<path class="st0" d="M10,139h10v-10h10v-10h10v-10h9V99h41v-9H80V79H70V69H59V59H49V49h-9V39H30v-9H20V20H10V139z M0,0h10v10h10v10
+	h10v10h10v9h9v10h10v10h11v10h10v10h10v11h10v9h10v10H49v10h-9v10H30v10H20v9H10v10H0V0z"/>
+<path class="st1" d="M110,109v10H49v10h-9v10H30v9H20v10H10v-10h10v-9h10v-10h10v-10h9v-10H110z"/>
+</svg>
