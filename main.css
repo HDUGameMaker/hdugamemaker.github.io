@@ -5,13 +5,14 @@
     transition: all .15s ease;
     scroll-behavior: smooth;
     cursor: url("asserts/cursors/2.svg") 3 3 , auto;
+    font-family: Microsoft YaHei, serif;
 }
 body{
     background-color: rgb(26, 26, 26);
 }
 @font-face {
-    font-family:"LLPixelFun";
-    src: url("asserts/fonts/LLPixelFun-Regular.ttf") format("truetype");
+    font-family:Pixel;
+    src: local('Pixel'), local('Pixel'), url("asserts/fonts/LLPixelFun-Regular.ttf") format("truetype");
 }
 /* animations */
 @keyframes appear{
@@ -37,7 +38,7 @@ body{
       mask: url('asserts/logos/gm.svg') no-repeat 50% 50%;
   }
 .top h1{
-    font-family: "LL PixelFun", serif;
+    font-family: "Pixel", serif;
     font-size: 32px;
     letter-spacing: 2px;
     /*font-style: italic;
