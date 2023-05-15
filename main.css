@@ -1,0 +1,41 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .15s ease;
+    scroll-behavior: smooth;
+    cursor: url("asserts/cursors/2.svg") 3 3 , auto;
+}
+body{
+    background-color: rgb(26, 26, 26);
+}
+/* animations */
+@keyframes appear{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* head */
+.top{
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 10px;
+    text-align: left;
+    height: 60px;
+    display: flex;
+    /*background-image: linear-gradient(to right, #ffd75e, #20f389, #39e3ff, #ff78b0, #f1df8e);*/
+} svg-img{
+    height: 60px;
+    fill: aqua;
+  }
+.top h1{
+    font-size: 32px;
+    /*font-style: italic;*/
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 1px #aaaaaa;
+}
+
+
+/* outlinks */
+.outlink {
+
+}
