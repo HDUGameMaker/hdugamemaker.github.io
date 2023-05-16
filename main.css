@@ -5,10 +5,14 @@
     transition: all .15s ease;
     scroll-behavior: smooth;
     cursor: url("asserts/cursors/2.svg") 3 3 , auto;
-    font-family: Microsoft YaHei, serif;
+}
+html{
+    height: 100%;
 }
 body{
     background-color: rgb(26, 26, 26);
+    font-family: Microsoft YaHei, serif;
+    height: 100%;
 }
 @font-face {
     font-family:Pixel;
@@ -24,9 +28,12 @@ body{
     background-color: rgba(255, 255, 255, 0.11);
     padding: 10px;
     text-align: left;
-    height: 60px;
+    height: 9%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    position: fixed;
     /*background-image: linear-gradient(to right, #ffd75e, #20f389, #39e3ff, #ff78b0, #f1df8e);*/
 }
 .top div{
@@ -49,13 +56,26 @@ body{
 }
 
 /* info */
+#info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .info h1,p{
     color: white;
 }
+
+
 /* outlinks */
-.links {
+.bottom {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
 }
 .link{
     display: flex;
@@ -64,8 +84,8 @@ body{
     height: 60px;
     margin: 10px;
     border-radius:5px;
-    background-color: white;
 }
+
 .link:hover{
      transform: scale(1.025);
      transform-origin: center;
@@ -128,4 +148,19 @@ body{
 }
 #wechat h1{
     color:#ffffff;
+}
+#email{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: auto;
+    height: 60px;
+    margin: 10px;
+    text-decoration-color: white;
+}
+#email h1{
+    color:white;
+}
+#email a{
+    color:white;
 }
