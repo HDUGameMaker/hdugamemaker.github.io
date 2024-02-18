@@ -4,7 +4,7 @@
     padding: 0;
     transition: all .15s ease;
     scroll-behavior: smooth;
-    cursor: url("asserts/cursors/2.svg") 3 3 , auto;
+    cursor: url("asserts/cursors/2.svg") 3 3 , default;
 }
 html{
     height: 100%;
@@ -59,14 +59,25 @@ body{
 #info{
     display: flex;
     flex-direction: column;
+    float:left;
     height: 100%;
-    width: 100%;
+    width: 80%;
     justify-content: space-evenly;
 }
 .info h1,p{
     color: white;
 }
 
+/* login */
+#login{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 100%;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /* outlinks */
 .bottom {
@@ -76,6 +87,9 @@ body{
     padding: 10px;
     position: fixed;
     bottom: 0;
+}
+.bottom *{
+    cursor: url("asserts/cursors/3.svg") 3 3 , pointer;
 }
 .link{
     display: flex;
@@ -87,8 +101,9 @@ body{
 }
 
 .link:hover{
-     transform: scale(1.025);
-     transform-origin: center;
+    transform: scale(1.025);
+    transform-origin: center;
+
  }
 .link div{
     width: 30px;
@@ -163,4 +178,19 @@ body{
 }
 #email a{
     color:white;
+}
+
+/* login.xml */
+#login_code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#login_code h1{
+    color: white;
+    font-size: 24px;
+    margin: 10px;
 }
