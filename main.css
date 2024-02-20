@@ -5,14 +5,18 @@
     transition: all .15s ease;
     scroll-behavior: smooth;
     cursor: url("asserts/cursors/2.svg") 3 3 , default;
+    box-sizing: border-box; /* 让元素的宽度包含边框和内边距 */
 }
 html{
     height: 100%;
 }
 body{
     background-color: rgb(26, 26, 26);
-    font-family: Microsoft YaHei, serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     height: 100%;
+    font-family: Microsoft YaHei, serif;
 }
 @font-face {
     font-family:Pixel;
@@ -24,16 +28,19 @@ body{
     100%{opacity: 1;}
 }
 /* head */
+#top{
+    height: auto;
+    overflow: auto;
+}
+
 .top{
     background-color: rgba(255, 255, 255, 0.11);
     padding: 10px;
     text-align: left;
-    height: 9%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    position: fixed;
     /*background-image: linear-gradient(to right, #ffd75e, #20f389, #39e3ff, #ff78b0, #f1df8e);*/
 }
 .top div{
@@ -55,37 +62,49 @@ body{
     padding: 10px;
 }
 
-/* info */
+/* mid */
+#mid{
+    padding: 10px;
+    display: flex; /* 使用弹性盒子布局 */
+    height: 60%;
+    overflow-y: auto; /* 如果中间区域的内容超出高度，可以使用滚轮滑动 */
+}
+
 #info{
-    display: flex;
+    flex: 0 0 80%; /* 设置左边部分的基础宽度为 70%，不允许收缩或扩展 */
+    display: flex; /* 使用弹性盒子布局 */
+    padding: 10px;
+    flex-wrap: wrap; /* 设置内部元素自动换行 */
     flex-direction: column;
     float:left;
-    height: 100%;
-    width: 80%;
     justify-content: space-evenly;
+    overflow: auto;
 }
 .info h1,p{
     color: white;
 }
 
-/* login */
 #login{
-    display: flex;
-    flex-direction: column;
-    float: right;
-    height: 100%;
-    width: 20%;
-    justify-content: space-evenly;
-    align-items: center;
+    flex: 0 0 20%; /* 设置右边部分的基础宽度为 20%，不允许收缩或扩展 */
+    display: flex; /* 使用弹性盒子布局 */
+    padding: 10px;
+    flex-direction: column; /* 设置内部元素纵向排列 */
+    align-items: center; /* 设置内部元素水平居中 */
+    justify-content: center; /* 设置内部元素垂直居中 */
 }
 
 /* outlinks */
+#bottom {
+    position: fixed;
+    bottom: 0; /* 设置底部区域的位置 */
+    height: auto;
+}
 .bottom {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
     width: 100%;
     padding: 10px;
-    position: fixed;
     bottom: 0;
 }
 .bottom *{
@@ -116,6 +135,22 @@ body{
     font-size: 13px;
     padding: 5px;
     user-select: none;
+}
+@media (max-width: 768px) {
+    .link{
+            width: 60px;
+        }
+    .link h1{
+        font-size: 0;
+        margin: 0;
+        display: none;
+    }
+    #email h1{
+        font-size: 13px;
+    }
+    #email a{
+        font-size: 13px;
+    }
 }
 #bilibili{
     background-color: palevioletred;
